@@ -1,14 +1,15 @@
 import React from "react";
-import presentationImg from "../../Assets/FrontEnd IllusionRO/SEPARADOS/2.png";
+import grifo from "../../Assets/FrontEnd IllusionRO/SEPARADOS/4.png";
 
-export const Presentation = () => {
+export const ServerStatus = () => {
   return (
     <section>
       <div>
         <figure>
-          <img alt="Presentation_image" src={presentationImg} />
+          <img alt="Presentation_image" src={grifo} />
         </figure>
       </div>
+      <div></div>
     </section>
   );
 };
