@@ -18,5 +18,10 @@ export const MoreInformationContainer = styled.div`
     text-align: left;
     margin-left: 46%;
     font-size: 2vw;
+
+    p a {
+      color: black;
+      text-decoration: none;
+    }
   }
 `;
