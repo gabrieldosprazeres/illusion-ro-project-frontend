@@ -27,6 +27,7 @@ export const Container = styled.div`
     color: #484848;
     font-weight: 800;
     font-size: 22px;
+    margin: 15px 0;
   }
 
   .image {

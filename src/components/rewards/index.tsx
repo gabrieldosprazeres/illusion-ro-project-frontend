@@ -2,11 +2,26 @@ import { Container } from "./styles";
 import Image from "../../Assets/FrontEnd IllusionRO/SEPARADOS/ReiPoring.png";
 import { ProgressBar } from "../progressBar";
 import { Chest } from "../chest";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 export const Rewards = () => {
-  // const [index,setIndex] = useState(1)
+  const [Users, setUsers] = useState([]);
   const arr = [1, 2, 3, 4, 5];
+
+  useEffect(() => {
+    axios
+      .get("http://illusion-ro.herokuapp.com/api/leads", {
+        params: { page: 1, per_page: 100 },
+      })
+      .then((resp) => {
+        setUsers(resp.data);
+        console.log(resp.data);
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  }, []);
 
   return (
     <Container>
@@ -23,12 +38,12 @@ export const Rewards = () => {
 
       <h3>Progresso dos prêmios da Comunidade</h3>
       <div className="progress_bar_container">
-        <ProgressBar currentValue={40} maxValue={800} />
+        <ProgressBar currentValue={Users.length} maxValue={800} />
       </div>
 
       <div className="chests">
         {arr.map((vAtual, indice) => (
-          <Chest key={indice} currentValue={370} index={vAtual} />
+          <Chest key={indice} currentValue={Users.length} index={vAtual} />
         ))}
       </div>
 
