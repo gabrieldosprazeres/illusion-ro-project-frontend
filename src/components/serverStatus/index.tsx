@@ -1,14 +1,28 @@
 import React from "react";
-import presentationImg from "../../Assets/FrontEnd IllusionRO/SEPARADOS/2.png";
+import grifo from "../../Assets/FrontEnd IllusionRO/SEPARADOS/4.png";
+import { Container } from "./styles";
 
-export const Presentation = () => {
+export const ServerStatus = () => {
   return (
-    <section>
-      <div>
+    <Container>
+      <div className="grifoImg">
         <figure>
-          <img alt="Presentation_image" src={presentationImg} />
+          <img alt="grifo" src={grifo} />
         </figure>
       </div>
-    </section>
+      <div className="infoServer">
+        <ul className="listInfo">
+          <h1>
+            Informações do <strong>Servidor</strong>
+          </h1>
+          <li>Episodio 18.1 Lobo Cinzento</li>
+          <li>Rates 25x25x10x</li>
+          <li>
+            Quartas Classes <sup>PT-BR</sup>
+          </li>
+          <li>Level 250/50</li>
+        </ul>
+      </div>
+    </Container>
   );
 };
