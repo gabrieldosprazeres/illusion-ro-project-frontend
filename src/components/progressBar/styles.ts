@@ -25,9 +25,6 @@ export const BarInfo = styled.div`
   justify-content: space-between;
 
   p {
-    margin: 0;
-    padding: 0;
-    outline: none;
     border: none;
     font-size: 18px;
   }
@@ -41,8 +38,9 @@ export const BarContainer = styled.div`
 
 export const Bar = styled.div<BarStyleProps>`
   width: ${(props) => (props.value > 100 ? "100%" : `${props.value}%`)};
-  background-color: ${(props) => (props.value < 4 ? "transparent" : "#ff8a00")};
-  color: ${(props) => (props.value >= 4 ? props.fontColor : "transparent")};
+  background-color: ${(props) =>
+    props.value < 10 ? "transparent" : "#ff8a00"};
+  color: ${(props) => (props.value >= 10 ? props.fontColor : "transparent")};
   height: ${(props) => `${props.heigth}px`};
   border-radius: 14px;
   transition: width 1s;
@@ -52,12 +50,15 @@ export const Bar = styled.div<BarStyleProps>`
   justify-content: flex-end;
 
   p {
-    margin: 0;
-    padding: 0;
-    outline: none;
     border: none;
     padding-right: ${(props) => (props.value >= 5 ? "6px" : "0px")};
     font-size: 12px;
     font-weight: 500;
+  }
+
+  @media (min-width: 640px) {
+    color: ${(props) => (props.value >= 4 ? props.fontColor : "transparent")};
+    background-color: ${(props) =>
+      props.value < 4 ? "transparent" : "#ff8a00"};
   }
 `;

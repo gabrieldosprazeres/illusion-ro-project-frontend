@@ -13,7 +13,7 @@ export const ProgressBar = ({
   maxValue = 500,
   initialValue = 0,
   heigth = 25,
-  fontColor = "#8e8e8e",
+  fontColor = "#525050",
 }: ProgressBarProps) => {
   const halfValue = parseInt((maxValue / 2).toFixed(0));
   let percent = parseInt(
@@ -42,4 +42,3 @@ export const ProgressBar = ({
     </Container>
   );
 };
-// export default ProgressBar;
