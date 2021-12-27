@@ -5,13 +5,11 @@ import { MoreInformation } from "./components/moreInformation";
 import GlobalStyle from "./styles/global";
 import { ServerStatus } from "./components/serverStatus";
 
-import "./App.css";
-
 function App() {
   return (
     <div className="App">
-      <Header />
       <GlobalStyle />
+      <Header />
       <Presentation />
       <MoreInformation />
       <ServerStatus />
