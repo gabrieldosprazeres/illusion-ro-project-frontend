@@ -12,7 +12,7 @@ export const Rewards = () => {
   useEffect(() => {
     axios
       .get("http://illusion-ro.herokuapp.com/api/leads", {
-        params: { page: 1, per_page: 100 },
+        params: { page: 1, per_page: 800 },
       })
       .then((resp) => {
         setUsers(resp.data);
