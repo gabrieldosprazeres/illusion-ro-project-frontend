@@ -5,6 +5,7 @@ import { MoreInformation } from "./components/moreInformation";
 import GlobalStyle from "./styles/global";
 import { ServerStatus } from "./components/serverStatus";
 import { Rewards } from "./components/rewards";
+import { ClasseContainer } from "./components/classesContainer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Presentation />
       <MoreInformation />
       <ServerStatus />
+      <ClasseContainer />
       <Rewards />
     </div>
   );
