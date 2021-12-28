@@ -34,18 +34,23 @@ export const ClasseContainer = () => {
     [key: string]: JSX.Element;
   }
   const objLogo = [
-    { url: logoAbyss, classe: "abyss", id: 4 },
-    { url: logoArchMage, classe: "archMage", id: 9 },
-    { url: logoBiolo, classe: "biolo", id: 6 },
-    { url: logoCardinal, classe: "cardinal", id: 2 },
-    { url: logoDragonKnight, classe: "dragonKnight", id: 8 },
-    { url: logoElemental, classe: "elemental", id: 1 },
-    { url: logoImperial, classe: "imperialGuard", id: 7 },
-    { url: logoInquisitor, classe: "inquisitor", id: 3 },
-    { url: logoMeister, classe: "meister", id: 5 },
-    { url: logoShadowCross, classe: "shadowCross", id: 12 },
-    { url: logoTroubadourTrouvere, classe: "troubadourTrouvere", id: 10 },
-    { url: logoWindHawk, classe: "windHawk", id: 11 },
+    { url: logoAbyss, classe: "abyss", id: 4, color: "#808080" },
+    { url: logoArchMage, classe: "archMage", id: 9, color: "#808080" },
+    { url: logoBiolo, classe: "biolo", id: 6, color: "#808080" },
+    { url: logoCardinal, classe: "cardinal", id: 2, color: "#808080" },
+    { url: logoDragonKnight, classe: "dragonKnight", id: 8, color: "#808080" },
+    { url: logoElemental, classe: "elemental", id: 1, color: "#808080" },
+    { url: logoImperial, classe: "imperialGuard", id: 7, color: "#808080" },
+    { url: logoInquisitor, classe: "inquisitor", id: 3, color: "#808080" },
+    { url: logoMeister, classe: "meister", id: 5, color: "#808080" },
+    { url: logoShadowCross, classe: "shadowCross", id: 12, color: "#808080" },
+    {
+      url: logoTroubadourTrouvere,
+      classe: "troubadourTrouvere",
+      id: 10,
+      color: "#808080",
+    },
+    { url: logoWindHawk, classe: "windHawk", id: 11, color: "#808080" },
   ];
 
   const objClasse: IObjClasse = {
@@ -64,6 +69,22 @@ export const ClasseContainer = () => {
   };
 
   const [classeName, setClassName] = useState<string>("abyss");
+  const [characters, setCharacters] = useState(objLogo);
+
+  const handleCharactersColor = (id: number) => {
+    let output = characters.map((item) => {
+      if (item.id === id) {
+        item.color = "#9377AD";
+        // if (id === 4) {
+        //   item.color = "green";
+        // }
+      } else {
+        item.color = "#808080";
+      }
+      return item;
+    });
+    setCharacters(output);
+  };
 
   return (
     <section>
@@ -72,12 +93,15 @@ export const ClasseContainer = () => {
           Conheças as <strong>Quartas Classes</strong>
         </h2>
         <ContainerIconsClasse theme={"blue"}>
-          {objLogo.map((item) => {
+          {characters.map((item) => {
             return (
-              <figure key={item.id}>
+              <figure key={item.id} style={{ backgroundColor: item.color }}>
                 <img
                   alt="logo_classe"
-                  onClick={() => setClassName(item.classe)}
+                  onClick={() => {
+                    setClassName(item.classe);
+                    handleCharactersColor(item.id);
+                  }}
                   src={item.url}
                 />
               </figure>
