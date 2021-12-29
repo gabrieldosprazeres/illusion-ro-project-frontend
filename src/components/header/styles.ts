@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const ContainerHeader = styled.header`
   margin: 1.8em;
+  display: flex;
+  justify-content: center;
 `;
 
 export const ContainerLogo = styled.figure`
