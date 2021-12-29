@@ -77,7 +77,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    //margin-top: 20px;
     text-align: center;
 
     width: 100%;
@@ -88,6 +88,27 @@ export const Container = styled.div`
       background-image: url(${BackgroundImage});
       background-size: cover;
       background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .image {
+      img {
+        width: 65%;
+      }
+    }
+
+    h3 {
+      font-size: 28px;
+    }
+
+    .chests {
+      & :nth-child(5) {
+        .reward_info {
+          left: -230px;
+          width: 500px;
+        }
+      }
     }
   }
 `;
