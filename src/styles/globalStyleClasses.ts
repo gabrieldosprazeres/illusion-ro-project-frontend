@@ -70,3 +70,45 @@ export const ContainerFlex = styled.div`
     }
   }
 `;
+
+export const ContainerLeft = styled.div`
+  animation: leFadeInLeft 1.3s;
+
+  @keyframes leFadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-60px);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+`;
+
+export const ContainerRight = styled.div`
+  animation: leFadeInRight 1.3s;
+
+  @keyframes leFadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(60px);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+`;
+
+export const MiddleContainer = styled.div`
+  animation: leFadeInBottom 1.3s;
+
+  @keyframes leFadeInBottom {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+`;
