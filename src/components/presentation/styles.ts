@@ -36,6 +36,9 @@ export const Background = styled.div`
       font-size: 1.8vw;
       font-weight: 300;
     }
+    h2 {
+      text-transform: uppercase;
+    }
   }
   .classInformation {
     color: #4e4e4e;

@@ -1,5 +1,3 @@
-import React from "react";
-import presentationImg from "../../Assets/FrontEnd IllusionRO/SEPARADOS/2.png";
 import { ContainerPresentation, Background } from "./styles";
 
 export const Presentation = () => {
