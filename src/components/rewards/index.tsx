@@ -4,6 +4,7 @@ import { ProgressBar } from "../progressBar";
 import { Chest } from "../chest";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import ArrowUp from "../../Assets/FrontEnd IllusionRO/SEPARADOS/12.png";
 
 export const Rewards = () => {
   const [Users, setUsers] = useState([]);
@@ -16,7 +17,7 @@ export const Rewards = () => {
       })
       .then((resp) => {
         setUsers(resp.data);
-        console.log(resp.data);
+        // console.log(resp.data);
       })
       .catch((e) => {
         console.log(e);
@@ -36,18 +37,25 @@ export const Rewards = () => {
         <img src={Image} alt="imagem" />
       </div>
 
-      <h3>Progresso dos prêmios da Comunidade</h3>
-      <div className="progress_bar_container">
-        <ProgressBar currentValue={Users.length} maxValue={800} />
-      </div>
+      <div className="background">
+        <h3>Progresso dos prêmios da Comunidade</h3>
 
-      <div className="chests">
-        {arr.map((vAtual, indice) => (
-          <Chest key={indice} currentValue={Users.length} index={vAtual} />
-        ))}
-      </div>
+        <div className="progress_bar_container">
+          <ProgressBar currentValue={Users.length} maxValue={800} />
+        </div>
 
-      <button>Receber meus prêmios</button>
+        <div className="chests">
+          {arr.map((vAtual, indice) => (
+            <Chest key={indice} currentValue={Users.length} index={vAtual} />
+          ))}
+        </div>
+
+        <button>Receber meus prêmios</button>
+
+        <a href="#topo">
+          <img className="arrowup" src={ArrowUp} alt="" />
+        </a>
+      </div>
     </Container>
   );
 };
