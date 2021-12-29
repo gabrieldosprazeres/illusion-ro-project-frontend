@@ -41,7 +41,7 @@ export const Background = styled.div`
     color: #4e4e4e;
     background: white;
     position: relative;
-    left: 35%;
+    left: 73%;
     top: 4%;
     z-index: 3;
   }
@@ -49,7 +49,7 @@ export const Background = styled.div`
     background: black;
     color: white;
     position: relative;
-    left: 28%;
+    left: 66%;
     bottom: 7%;
     z-index: 2;
   }
