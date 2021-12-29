@@ -4,27 +4,41 @@ import {
   Container,
   ContainerFlex,
   ContainerWrapeFlex,
+  ContainerLeft,
+  ContainerRight,
+  MiddleContainer,
 } from "../../../styles/globalStyleClasses";
+
+import { ContainerTitle } from "./style";
 
 export const ArchMage = () => {
   return (
     <Container>
-      <ContainerFlex>
-        <h2>Arch Mage</h2>
-        <h3>Mestre Arcano</h3>
-        <p>
-          Mestre Arcanos contam com suas habilidades como sua principal fonte de
-          dano, e tais ataques são baseados em magia e levam em consideração
-          apenas a Defesa Mágica do alvo, e não sua Defesa Física.
-        </p>
-      </ContainerFlex>
+      <ContainerLeft>
+        <ContainerTitle>
+          <ContainerFlex>
+            <h2>Arch Mage</h2>
+            <h3>Mestre Arcano</h3>
+            <p>
+              Mestre Arcanos contam com suas habilidades como sua principal
+              fonte de dano, e tais ataques são baseados em magia e levam em
+              consideração apenas a Defesa Mágica do alvo, e não sua Defesa
+              Física.
+            </p>
+          </ContainerFlex>
+        </ContainerTitle>
+      </ContainerLeft>
       <ContainerWrapeFlex>
-        <ContainerFlex>
-          <img className="status" alt="statusAbyss" src={statusPerson} />
-        </ContainerFlex>
-        <ContainerFlex>
-          <img className="person" alt="personAbyss" src={logoPerson} />
-        </ContainerFlex>
+        <MiddleContainer>
+          <ContainerFlex>
+            <img className="status" alt="statusAbyss" src={statusPerson} />
+          </ContainerFlex>
+        </MiddleContainer>
+        <ContainerRight>
+          <ContainerFlex>
+            <img className="person" alt="personAbyss" src={logoPerson} />
+          </ContainerFlex>
+        </ContainerRight>
       </ContainerWrapeFlex>
     </Container>
   );

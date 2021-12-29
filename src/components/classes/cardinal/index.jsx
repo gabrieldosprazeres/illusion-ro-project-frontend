@@ -4,25 +4,39 @@ import {
   Container,
   ContainerFlex,
   ContainerWrapeFlex,
+  ContainerLeft,
+  ContainerRight,
+  MiddleContainer,
 } from "../../../styles/globalStyleClasses";
+
+import { ContainerTitle } from "./style";
 
 export const Cardinal = () => {
   return (
     <Container>
-      <ContainerFlex>
-        <h2>Cardinal</h2>
-        <h3>Cardeal</h3>
-        <p>
-        Um cardeal é um bispo proeminente e príncipe do Colégio dos Cardeais da Igreja Católica.
-        </p>
-      </ContainerFlex>
+      <ContainerLeft>
+        <ContainerTitle>
+          <ContainerFlex>
+            <h2>Cardinal</h2>
+            <h3>Cardeal</h3>
+            <p>
+              Um cardeal é um bispo proeminente e príncipe do Colégio dos
+              Cardeais da Igreja Católica.
+            </p>
+          </ContainerFlex>
+        </ContainerTitle>
+      </ContainerLeft>
       <ContainerWrapeFlex>
-        <ContainerFlex>
-          <img className="status" alt="statusAbyss" src={statusPerson} />
-        </ContainerFlex>
-        <ContainerFlex>
-          <img className="person" alt="personAbyss" src={logoPerson} />
-        </ContainerFlex>
+        <MiddleContainer>
+          <ContainerFlex>
+            <img className="status" alt="statusAbyss" src={statusPerson} />
+          </ContainerFlex>
+        </MiddleContainer>
+        <ContainerRight>
+          <ContainerFlex>
+            <img className="person" alt="personAbyss" src={logoPerson} />
+          </ContainerFlex>
+        </ContainerRight>
       </ContainerWrapeFlex>
     </Container>
   );
