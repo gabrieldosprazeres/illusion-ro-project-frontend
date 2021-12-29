@@ -28,12 +28,20 @@ export const BarInfo = styled.div`
     border: none;
     font-size: 18px;
   }
+
+  @media (min-width: 1440px) {
+    width: 88%;
+  }
 `;
 
 export const BarContainer = styled.div`
   width: 100%;
   background-color: #8e8e8e;
   border-radius: 14px;
+
+  @media (min-width: 1440px) {
+    width: 90%;
+  }
 `;
 
 export const Bar = styled.div<BarStyleProps>`
