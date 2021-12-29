@@ -2,6 +2,7 @@ import styled from "styled-components";
 import BackgroundPresentation from "../../Assets/FrontEnd IllusionRO/SEPARADOS/backgroundPresentation.png";
 
 export const ContainerPresentation = styled.section`
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   width: 90vw;
