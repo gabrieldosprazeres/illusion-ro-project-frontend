@@ -4,26 +4,39 @@ import {
   Container,
   ContainerFlex,
   ContainerWrapeFlex,
+  ContainerLeft,
+  ContainerRight,
+  MiddleContainer,
 } from "../../../styles/globalStyleClasses";
+
+import { ContainerTitle } from "./style";
 
 export const ShadowCross = () => {
   return (
     <Container>
-      <ContainerFlex>
-        <h2>Shadow Cross</h2>
-        <h3>Retalhador</h3>
-        <p>
-          Shadow Crosses podem empunhar duas vezes (equipar uma arma em cada
-          mão) e utilizar dos mais variados venenos para aumentar sua força.
-        </p>
-      </ContainerFlex>
+      <ContainerLeft>
+        <ContainerTitle>
+          <ContainerFlex>
+            <h2>Shadow Cross</h2>
+            <h3>Retalhador</h3>
+            <p>
+              Shadow Crosses podem empunhar duas vezes (equipar uma arma em cada
+              mão) e utilizar dos mais variados venenos para aumentar sua força.
+            </p>
+          </ContainerFlex>
+        </ContainerTitle>
+      </ContainerLeft>
       <ContainerWrapeFlex>
-        <ContainerFlex>
-          <img className="status" alt="statusAbyss" src={statusPerson} />
-        </ContainerFlex>
-        <ContainerFlex>
-          <img className="person" alt="personAbyss" src={logoPerson} />
-        </ContainerFlex>
+        <MiddleContainer>
+          <ContainerFlex>
+            <img className="status" alt="statusAbyss" src={statusPerson} />
+          </ContainerFlex>
+        </MiddleContainer>
+        <ContainerRight>
+          <ContainerFlex>
+            <img className="person" alt="personAbyss" src={logoPerson} />
+          </ContainerFlex>
+        </ContainerRight>
       </ContainerWrapeFlex>
     </Container>
   );

@@ -9,18 +9,22 @@ import {
   MiddleContainer,
 } from "../../../styles/globalStyleClasses";
 
+import { ContainerTitle } from "./style";
+
 export const Abyss = () => {
   return (
     <Container>
       <ContainerLeft>
-        <ContainerFlex>
-          <h2>Abyss Chaser</h2>
-          <h3>Desertor</h3>
-          <p>
-            Os Desertores, são a principal raça do mundo de Midgard. Eles são
-            resilientes, tendo sobrevivido a um cataclismo de Ragnarök.
-          </p>
-        </ContainerFlex>
+        <ContainerTitle>
+          <ContainerFlex>
+            <h2>Abyss Chaser</h2>
+            <h3>Desertor</h3>
+            <p>
+              Os Desertores, são a principal raça do mundo de Midgard. Eles são
+              resilientes, tendo sobrevivido a um cataclismo de Ragnarök.
+            </p>
+          </ContainerFlex>
+        </ContainerTitle>
       </ContainerLeft>
       <ContainerWrapeFlex>
         <MiddleContainer>

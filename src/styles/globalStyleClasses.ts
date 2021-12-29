@@ -105,10 +105,21 @@ export const MiddleContainer = styled.div`
   @keyframes leFadeInBottom {
     from {
       opacity: 0;
-      transform: translateY(100%);
     }
     to {
       opacity: 1;
+    }
+  }
+
+  @media (min-width: 768px) {
+    @keyframes leFadeInBottom {
+      from {
+        opacity: 0;
+        transform: translateY(100%);
+      }
+      to {
+        opacity: 1;
+      }
     }
   }
 `;

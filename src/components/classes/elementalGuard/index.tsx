@@ -4,26 +4,39 @@ import {
   Container,
   ContainerFlex,
   ContainerWrapeFlex,
+  ContainerLeft,
+  ContainerRight,
+  MiddleContainer,
 } from "../../../styles/globalStyleClasses";
+
+import { ContainerTitle } from "./style";
 
 export const ElementalGuard = () => {
   return (
     <Container>
-      <ContainerFlex>
-        <h2>Elemental Master</h2>
-        <h3>Elementalista</h3>
-        <p>
-          O Elementalista consegue manipular todos os elementos dentro do mundo
-          de ragnarok transformando em diversas magias poderosas.
-        </p>
-      </ContainerFlex>
+      <ContainerLeft>
+        <ContainerTitle>
+          <ContainerFlex>
+            <h2>Elemental Master</h2>
+            <h3>Elementalista</h3>
+            <p>
+              O Elementalista consegue manipular todos os elementos dentro do
+              mundo de ragnarok transformando em diversas magias poderosas.
+            </p>
+          </ContainerFlex>
+        </ContainerTitle>
+      </ContainerLeft>
       <ContainerWrapeFlex>
-        <ContainerFlex>
-          <img className="status" alt="statusAbyss" src={statusPerson} />
-        </ContainerFlex>
-        <ContainerFlex>
-          <img className="person" alt="personAbyss" src={logoPerson} />
-        </ContainerFlex>
+        <MiddleContainer>
+          <ContainerFlex>
+            <img className="status" alt="statusAbyss" src={statusPerson} />
+          </ContainerFlex>
+        </MiddleContainer>
+        <ContainerRight>
+          <ContainerFlex>
+            <img className="person" alt="personAbyss" src={logoPerson} />
+          </ContainerFlex>
+        </ContainerRight>
       </ContainerWrapeFlex>
     </Container>
   );
