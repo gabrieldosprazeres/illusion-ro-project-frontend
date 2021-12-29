@@ -21,4 +21,14 @@ export const Container = styled.div`
   img {
     width: 100%;
   }
+
+  @media (min-width: 1440px) {
+    width: 200px;
+
+    &:hover {
+      .reward_info {
+        width: 300px;
+      }
+    }
+  }
 `;

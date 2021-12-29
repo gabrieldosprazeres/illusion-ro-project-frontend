@@ -4,27 +4,40 @@ import {
   Container,
   ContainerFlex,
   ContainerWrapeFlex,
+  ContainerLeft,
+  ContainerRight,
+  MiddleContainer,
 } from "../../../styles/globalStyleClasses";
+
+import { ContainerTitle } from "./style";
 
 export const ImperialGuard = () => {
   return (
     <Container>
-      <ContainerFlex>
-        <h2>Imperial Guard</h2>
-        <h3>Guardião Imperial</h3>
-        <p>
-          Uma guarda imperial ou guarda do palácio é um grupo especial de tropas
-          (ou um membro dele) de um império, normalmente associado diretamente
-          ao imperador ou à imperatriz.
-        </p>
-      </ContainerFlex>
+      <ContainerLeft>
+        <ContainerTitle>
+          <ContainerFlex>
+            <h2>Imperial Guard</h2>
+            <h3>Guardião Imperial</h3>
+            <p>
+              Uma guarda imperial ou guarda do palácio é um grupo especial de
+              tropas (ou um membro dele) de um império, normalmente associado
+              diretamente ao imperador ou à imperatriz.
+            </p>
+          </ContainerFlex>
+        </ContainerTitle>
+      </ContainerLeft>
       <ContainerWrapeFlex>
-        <ContainerFlex>
-          <img className="status" alt="statusAbyss" src={statusPerson} />
-        </ContainerFlex>
-        <ContainerFlex>
-          <img className="person" alt="personAbyss" src={logoPerson} />
-        </ContainerFlex>
+        <MiddleContainer>
+          <ContainerFlex>
+            <img className="status" alt="statusAbyss" src={statusPerson} />
+          </ContainerFlex>
+        </MiddleContainer>
+        <ContainerRight>
+          <ContainerFlex>
+            <img className="person" alt="personAbyss" src={logoPerson} />
+          </ContainerFlex>
+        </ContainerRight>
       </ContainerWrapeFlex>
     </Container>
   );
