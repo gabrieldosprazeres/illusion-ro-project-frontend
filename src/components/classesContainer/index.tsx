@@ -75,9 +75,31 @@ export const ClasseContainer = () => {
     let output = characters.map((item) => {
       if (item.id === id) {
         item.color = "#9377AD";
-        // if (id === 4) {
-        //   item.color = "green";
-        // }
+        if (id === 4) {
+          item.color = "#5049c1";
+        } else if (id === 1) {
+          item.color = "#708e6d";
+        } else if (id === 2) {
+          item.color = "#6f9ecd";
+        } else if (id === 3) {
+          item.color = "#d45648";
+        } else if (id === 5) {
+          item.color = "#009ec6";
+        } else if (id === 6) {
+          item.color = "#00d893";
+        } else if (id === 7) {
+          item.color = "#ff4570";
+        } else if (id === 8) {
+          item.color = "#9e78b0";
+        } else if (id === 9) {
+          item.color = "#6f4b6e";
+        } else if (id === 10) {
+          item.color = "#008fba";
+        } else if (id === 11) {
+          item.color = "#73b5e5";
+        } else if (id === 12) {
+          item.color = "#511e52";
+        }
       } else {
         item.color = "#808080";
       }
