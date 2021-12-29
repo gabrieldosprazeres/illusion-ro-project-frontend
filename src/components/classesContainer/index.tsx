@@ -1,4 +1,3 @@
-// icons fundo brancos
 import logoElemental from "../../Assets/iconClasse/Elemental.png";
 import logoInquisitor from "../../Assets/iconClasse/Inquisitor.png";
 import logoCardinal from "../../Assets/iconClasse/Cardinal.png";

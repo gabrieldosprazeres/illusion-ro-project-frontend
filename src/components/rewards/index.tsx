@@ -15,7 +15,6 @@ export const Rewards = () => {
       .get("https://illusion-ro.herokuapp.com/api/leads/rewards")
       .then((resp) => {
         setUsers(resp.data);
-        //console.log(resp.data);
       })
       .catch((e) => {
         console.log(e);

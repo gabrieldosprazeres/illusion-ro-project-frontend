@@ -34,7 +34,9 @@ export const Abyss = () => {
         </MiddleContainer>
         <ContainerRight>
           <ContainerFlex>
-            <img className="person" alt="personAbyss" src={logoAbyss} />
+            <figure className="container-status-person">
+              <img className="person" alt="person" src={logoAbyss} />
+            </figure>
           </ContainerFlex>
         </ContainerRight>
       </ContainerWrapeFlex>

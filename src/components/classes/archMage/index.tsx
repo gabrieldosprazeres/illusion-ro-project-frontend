@@ -36,7 +36,9 @@ export const ArchMage = () => {
         </MiddleContainer>
         <ContainerRight>
           <ContainerFlex>
-            <img className="person" alt="personAbyss" src={logoPerson} />
+            <figure className="container-status-person">
+              <img className="person" alt="person" src={logoPerson} />
+            </figure>
           </ContainerFlex>
         </ContainerRight>
       </ContainerWrapeFlex>

@@ -28,15 +28,21 @@ export const ContainerWrapeFlex = styled.div`
 `;
 
 export const ContainerFlex = styled.div`
+  .container-status-person {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
   .person {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
   }
 
   .status {
     width: 200px;
     height: 200px;
   }
+
   color: #808080;
 
   p {
