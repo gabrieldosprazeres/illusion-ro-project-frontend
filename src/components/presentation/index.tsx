@@ -8,7 +8,7 @@ export const Presentation = () => {
           <h3>
             Quartas Classses <br /> E sistemas Liberados
           </h3>
-          <span>250 / 70</span>
+          <span>250 / 50</span>
         </div>
         <div className="bubble translateInformation">
           <h3>
