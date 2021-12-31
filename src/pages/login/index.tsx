@@ -28,7 +28,6 @@ export const Login = () => {
     axios
       .post("https://illusion-ro.herokuapp.com/api/login", data)
       .then((resp) => {
-        console.log(resp.data);
         localStorage.setItem(
           "@Illusiontoken",
           JSON.stringify(resp.data.access_token)
