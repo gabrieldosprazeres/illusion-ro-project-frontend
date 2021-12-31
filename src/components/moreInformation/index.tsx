@@ -9,9 +9,10 @@ export const MoreInformation = () => {
           <a href="/">
             <strong>Clique aqui</strong>&nbsp;
           </a>
-          e tenha informações sobre <br />o nosso servidor de Ragnarok Online!
+          e tenha informações sobre <br />o nosso servidor de{" "}
+          <strong>Ragnarok Online</strong>!
         </p>
-        <p>Recepcionista Kafra</p>
+        <strong>Recepcionista Kafra</strong>
       </div>
     </MoreInformationContainer>
   );

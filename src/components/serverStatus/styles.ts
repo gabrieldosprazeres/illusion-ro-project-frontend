@@ -5,6 +5,8 @@ export const Container = styled.section`
   justify-content: center;
   font-size: 2.2vw;
   margin-top: 20px;
+  align-items: center;
+  color: #484848;
 
   ul {
     margin: 0;
@@ -13,8 +15,10 @@ export const Container = styled.section`
   }
 
   li {
+    color: #183b41;
     list-style: none;
     margin: 10px 0 10px 0;
+    font-weight: 300;
   }
 
   .grifoImg figure {
@@ -27,7 +31,7 @@ export const Container = styled.section`
   }
 
   .infoServer .listInfo {
-    margin-left: 20px;
+    margin-left: 60px;
 
     h1 {
       font-weight: 400;
@@ -37,6 +41,13 @@ export const Container = styled.section`
       font-weight: bold;
       color: orange;
       font-size: 1vw;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .grifoImg figure {
+      margin: 0;
+      width: 25vw;
     }
   }
 `;

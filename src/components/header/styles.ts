@@ -9,5 +9,6 @@ export const ContainerHeader = styled.header`
 export const ContainerLogo = styled.figure`
   img {
     max-width: 20vw;
+    margin-top: 30px;
   }
 `;

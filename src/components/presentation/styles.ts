@@ -7,6 +7,10 @@ export const ContainerPresentation = styled.section`
   justify-content: center;
   width: 90vw;
   height: 60vw;
+
+  @media (min-width: 1440px) {
+    height: 40vw;
+  }
 `;
 
 export const Background = styled.div`
@@ -66,5 +70,34 @@ export const Background = styled.div`
     right: 7%;
     top: 8%;
     color: white;
+  }
+
+  @media (min-width: 1440px) {
+    .bubble {
+      height: 14vw;
+      width: 14vw;
+    }
+
+    .classInformation h3 {
+      font-size: 1.2vw;
+    }
+
+    .translateInformation h3 {
+      font-size: 1.6vw;
+    }
+
+    .classInformation {
+      left: 67%;
+    }
+
+    .translateInformation {
+      left: 62%;
+    }
+
+    h2 {
+      font-size: 2.5vw;
+      right: 20%;
+      top: 4%;
+    }
   }
 `;
