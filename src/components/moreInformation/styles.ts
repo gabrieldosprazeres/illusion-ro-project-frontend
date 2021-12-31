@@ -18,10 +18,24 @@ export const MoreInformationContainer = styled.div`
     text-align: left;
     margin-left: 46%;
     font-size: 2vw;
+    color: #484848;
 
     p a {
       color: black;
       text-decoration: none;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 60vw;
+
+    .contentContainer {
+      font-size: 1.7vw;
+      margin-left: 45%;
+
+      p a {
+        font-size: 1.7vw;
+      }
     }
   }
 `;

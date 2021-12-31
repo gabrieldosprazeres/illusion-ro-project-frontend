@@ -28,15 +28,21 @@ export const ContainerWrapeFlex = styled.div`
 `;
 
 export const ContainerFlex = styled.div`
+  .container-status-person {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
   .person {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
   }
 
   .status {
     width: 200px;
     height: 200px;
   }
+
   color: #808080;
 
   p {
@@ -67,6 +73,59 @@ export const ContainerFlex = styled.div`
     .person {
       width: 350px;
       height: 350px;
+    }
+  }
+`;
+
+export const ContainerLeft = styled.div`
+  animation: leFadeInLeft 1.3s;
+
+  @keyframes leFadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-60px);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+`;
+
+export const ContainerRight = styled.div`
+  animation: leFadeInRight 1.3s;
+
+  @keyframes leFadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(60px);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+`;
+
+export const MiddleContainer = styled.div`
+  animation: leFadeInBottom 1.3s;
+
+  @keyframes leFadeInBottom {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: 768px) {
+    @keyframes leFadeInBottom {
+      from {
+        opacity: 0;
+        transform: translateY(100%);
+      }
+      to {
+        opacity: 1;
+      }
     }
   }
 `;

@@ -8,6 +8,8 @@ export default createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
+
+
 a{
     text-decoration: none;
     cursor: pointer;

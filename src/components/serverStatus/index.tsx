@@ -1,4 +1,3 @@
-import React from "react";
 import grifo from "../../Assets/FrontEnd IllusionRO/SEPARADOS/4.png";
 import { Container } from "./styles";
 

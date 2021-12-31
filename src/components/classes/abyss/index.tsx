@@ -4,26 +4,41 @@ import {
   Container,
   ContainerFlex,
   ContainerWrapeFlex,
+  ContainerLeft,
+  ContainerRight,
+  MiddleContainer,
 } from "../../../styles/globalStyleClasses";
+
+import { ContainerTitle } from "./style";
 
 export const Abyss = () => {
   return (
     <Container>
-      <ContainerFlex>
-        <h2>Abyss Chaser</h2>
-        <h3>Desertor</h3>
-        <p>
-          Os Desertores, são a principal raça do mundo de Midgard. Eles são
-          resilientes, tendo sobrevivido a um cataclismo de Ragnarök.
-        </p>
-      </ContainerFlex>
+      <ContainerLeft>
+        <ContainerTitle>
+          <ContainerFlex>
+            <h2>Abyss Chaser</h2>
+            <h3>Desertor</h3>
+            <p>
+              Os Desertores, são a principal raça do mundo de Midgard. Eles são
+              resilientes, tendo sobrevivido a um cataclismo de Ragnarök.
+            </p>
+          </ContainerFlex>
+        </ContainerTitle>
+      </ContainerLeft>
       <ContainerWrapeFlex>
-        <ContainerFlex>
-          <img className="status" alt="statusAbyss" src={statusAbyss} />
-        </ContainerFlex>
-        <ContainerFlex>
-          <img className="person" alt="personAbyss" src={logoAbyss} />
-        </ContainerFlex>
+        <MiddleContainer>
+          <ContainerFlex>
+            <img className="status" alt="statusAbyss" src={statusAbyss} />
+          </ContainerFlex>
+        </MiddleContainer>
+        <ContainerRight>
+          <ContainerFlex>
+            <figure className="container-status-person">
+              <img className="person" alt="person" src={logoAbyss} />
+            </figure>
+          </ContainerFlex>
+        </ContainerRight>
       </ContainerWrapeFlex>
     </Container>
   );

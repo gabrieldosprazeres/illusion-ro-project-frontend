@@ -4,26 +4,41 @@ import {
   Container,
   ContainerFlex,
   ContainerWrapeFlex,
+  ContainerLeft,
+  ContainerRight,
+  MiddleContainer,
 } from "../../../styles/globalStyleClasses";
+
+import { ContainerTitle } from "./style";
 
 export const DragonKinght = () => {
   return (
     <Container>
-      <ContainerFlex>
-        <h2>Dragon Knight</h2>
-        <h3>Cavaleiro Dracônico</h3>
-        <p>
-          Os Cavaleiros Dracônicos são um antigo grupo dos guerreiros mais
-          habilidosos de Midgard.
-        </p>
-      </ContainerFlex>
+      <ContainerLeft>
+        <ContainerTitle>
+          <ContainerFlex>
+            <h2>Dragon Knight</h2>
+            <h3>Cavaleiro Dracônico</h3>
+            <p>
+              Os Cavaleiros Dracônicos são um antigo grupo dos guerreiros mais
+              habilidosos de Midgard.
+            </p>
+          </ContainerFlex>
+        </ContainerTitle>
+      </ContainerLeft>
       <ContainerWrapeFlex>
-        <ContainerFlex>
-          <img className="status" alt="statusAbyss" src={statusPerson} />
-        </ContainerFlex>
-        <ContainerFlex>
-          <img className="person" alt="personAbyss" src={logoPerson} />
-        </ContainerFlex>
+        <MiddleContainer>
+          <ContainerFlex>
+            <img className="status" alt="statusAbyss" src={statusPerson} />
+          </ContainerFlex>
+        </MiddleContainer>
+        <ContainerRight>
+          <ContainerFlex>
+            <figure className="container-status-person">
+              <img className="person" alt="person" src={logoPerson} />
+            </figure>
+          </ContainerFlex>
+        </ContainerRight>
       </ContainerWrapeFlex>
     </Container>
   );

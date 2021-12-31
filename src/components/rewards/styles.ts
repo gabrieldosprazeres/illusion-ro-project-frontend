@@ -1,7 +1,7 @@
 import styled from "styled-components";
+import BackgroundImage from "../../Assets/FrontEnd IllusionRO/BG-FUNDO-FINAL.png";
 
 export const Container = styled.div`
-  max-width: 75vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,6 +14,7 @@ export const Container = styled.div`
     font-weight: 800;
     font-size: 34px;
     margin: 15px 0;
+    max-width: 75vw;
   }
 
   > p {
@@ -21,6 +22,7 @@ export const Container = styled.div`
     color: #8e8e8e;
     width: 90%;
     font-size: 20px;
+    max-width: 75vw;
   }
 
   h3 {
@@ -28,6 +30,7 @@ export const Container = styled.div`
     font-weight: 800;
     font-size: 22px;
     margin: 15px 0;
+    max-width: 75vw;
   }
 
   .image {
@@ -46,6 +49,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 75vw;
 
     & :nth-child(5) {
       .reward_info {
@@ -63,5 +67,47 @@ export const Container = styled.div`
     border-radius: 20px;
     padding: 14px 40px;
     margin: 40px 0;
+  }
+  .arrowup {
+    width: 40px;
+    margin: 40px 0;
+  }
+
+  .background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+    height: 500px;
+  }
+  @media (min-width: 800px) {
+    .background {
+      background-image: url(${BackgroundImage});
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .image {
+      img {
+        width: 65%;
+      }
+    }
+
+    h3 {
+      font-size: 28px;
+    }
+
+    .chests {
+      & :nth-child(5) {
+        .reward_info {
+          left: -230px;
+          width: 500px;
+        }
+      }
+    }
   }
 `;

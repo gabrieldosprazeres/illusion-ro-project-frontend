@@ -4,26 +4,41 @@ import {
   Container,
   ContainerFlex,
   ContainerWrapeFlex,
+  ContainerLeft,
+  ContainerRight,
+  MiddleContainer,
 } from "../../../styles/globalStyleClasses";
+
+import { ContainerTitle } from "./style";
 
 export const Biolo = () => {
   return (
     <Container>
-      <ContainerFlex>
-        <h2>Biolo</h2>
-        <h3>Geneticista</h3>
-        <p>
-          O Geneticista é especialista em biotecnologia, agregando a bioenergia
-          das plantas para usar em suas batalhas.
-        </p>
-      </ContainerFlex>
+      <ContainerLeft>
+        <ContainerTitle>
+          <ContainerFlex>
+            <h2>Biolo</h2>
+            <h3>Geneticista</h3>
+            <p>
+              O Geneticista é especialista em biotecnologia, agregando a
+              bioenergia das plantas para usar em suas batalhas.
+            </p>
+          </ContainerFlex>
+        </ContainerTitle>
+      </ContainerLeft>
       <ContainerWrapeFlex>
-        <ContainerFlex>
-          <img className="status" alt="statusAbyss" src={statusPerson} />
-        </ContainerFlex>
-        <ContainerFlex>
-          <img className="person" alt="personAbyss" src={logoPerson} />
-        </ContainerFlex>
+        <MiddleContainer>
+          <ContainerFlex>
+            <img className="status" alt="statusAbyss" src={statusPerson} />
+          </ContainerFlex>
+        </MiddleContainer>
+        <ContainerRight>
+          <ContainerFlex>
+            <figure className="container-status-person">
+              <img className="person" alt="person" src={logoPerson} />
+            </figure>
+          </ContainerFlex>
+        </ContainerRight>
       </ContainerWrapeFlex>
     </Container>
   );

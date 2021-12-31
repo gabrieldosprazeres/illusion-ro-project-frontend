@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <ContainerHeader>
       <ContainerLogo>
-        <img alt="Logo" src={logo} />
+        <img alt="Logo" src={logo} id="topo" />
       </ContainerLogo>
     </ContainerHeader>
   );

@@ -4,19 +4,20 @@ import { ProgressBar } from "../progressBar";
 import { Chest } from "../chest";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import ArrowUp from "../../Assets/FrontEnd IllusionRO/SEPARADOS/12.png";
+
+import { Modal } from "../modal";
 
 export const Rewards = () => {
-  const [Users, setUsers] = useState([]);
+  const [Users, setUsers] = useState(0);
   const arr = [1, 2, 3, 4, 5];
+  const [openModal, setOpenModal] = useState(false);
 
   useEffect(() => {
     axios
-      .get("http://illusion-ro.herokuapp.com/api/leads", {
-        params: { page: 1, per_page: 800 },
-      })
+      .get("https://illusion-ro.herokuapp.com/api/leads/rewards")
       .then((resp) => {
         setUsers(resp.data);
-        console.log(resp.data);
       })
       .catch((e) => {
         console.log(e);
@@ -36,18 +37,27 @@ export const Rewards = () => {
         <img src={Image} alt="imagem" />
       </div>
 
-      <h3>Progresso dos prêmios da Comunidade</h3>
-      <div className="progress_bar_container">
-        <ProgressBar currentValue={Users.length} maxValue={800} />
-      </div>
+      <div className="background">
+        <h3>Progresso dos prêmios da Comunidade</h3>
 
-      <div className="chests">
-        {arr.map((vAtual, indice) => (
-          <Chest key={indice} currentValue={Users.length} index={vAtual} />
-        ))}
-      </div>
+        <div className="progress_bar_container">
+          <ProgressBar currentValue={Users} maxValue={800} />
+        </div>
 
-      <button>Receber meus prêmios</button>
+        <div className="chests">
+          {arr.map((vAtual, indice) => (
+            <Chest key={indice} currentValue={Users} index={vAtual} />
+          ))}
+        </div>
+
+        <button onClick={() => setOpenModal(true)}>Receber meus prêmios</button>
+
+        {openModal && <Modal setOpenModal={setOpenModal} />}
+
+        <a href="#topo">
+          <img className="arrowup" src={ArrowUp} alt="" />
+        </a>
+      </div>
     </Container>
   );
 };
