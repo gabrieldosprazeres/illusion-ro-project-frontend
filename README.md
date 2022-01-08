@@ -1,10 +1,12 @@
 ### 🎲 Rodando o Front End
 
 ```bash
-# Clone este repositório usando um dos comandos abaixo:
+# Clone este repositório usando o terminal com um dos comandos abaixo:
 $ git clone <git@gitlab.com:gabrieldosprazeres/illusion-ro-project-frontend.git>
+# ou
+$ git clone <https://gitlab.com/gabrieldosprazeres/illusion-ro-project-frontend.git>
 
-# entre na pasta
+# entre na pasta do projeto
 $ cd illusion-ro-project-frontend/
 
 # instale as dependências
