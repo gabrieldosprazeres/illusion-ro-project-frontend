@@ -1,3 +1,15 @@
+<div align="center">
+    <h4> 🚧  IllusionRo 🚀 Primeira versão concluída.  🚧</h4>
+</div>
+
+<div align="center">
+    <h2> Preview da tela home do site.</h2>
+</div>
+
+<div align="center">
+    <img width="800px" hight="300px" src="https://i.imgur.com/X68fme7.png" /><br><br>
+</div>
+
 ### 🎲 Rodando o Front End
 
 ```bash
