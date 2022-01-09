@@ -3,12 +3,29 @@
 </div>
 
 <div align="center">
+
+    🚀 Plataforma com objetivo de captação de leads para lançamento do servidor Ragnarok IllusionRo!!!
+
+</div>
+
+<div align="center">
     <h2> Preview da tela home do site.</h2>
 </div>
 
 <div align="center">
     <img width="800px" hight="300px" src="https://i.imgur.com/X68fme7.png" /><br><br>
 </div>
+
+### ⚙️ Funcionalidades
+
+- [x] Efetuar cadastro para liberação de premiações dentro do jogo.
+
+## 🚀 Tecnologias Front End
+
+- [x] Linguagem de programação: JavaScript
+- [x] Framework: ReactJs
+- [x] IDE: VScode
+
 
 ### 🎲 Rodando o Front End
 
