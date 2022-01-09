@@ -25,15 +25,25 @@
 - [x] Linguagem de programação: JavaScript
 - [x] Framework: ReactJs
 - [x] IDE: VScode
+- [x] Node: 17.3.0
 
 
 ### 🎲 Rodando o Front End
 
 ```bash
+
+# Verifique a versão do seu nvm usando nvm list
+# Se não tiver na versão nvm 17.3.0 mude para tal
+# no terminal 
+$ nvm list
+$ nvm use 17.3.0
+
 # Clone este repositório usando o terminal com um dos comandos abaixo:
 $ git clone <git@gitlab.com:gabrieldosprazeres/illusion-ro-project-frontend.git>
 # ou
 $ git clone <https://gitlab.com/gabrieldosprazeres/illusion-ro-project-frontend.git>
+
+
 
 # entre na pasta do projeto
 $ cd illusion-ro-project-frontend/
