@@ -25,13 +25,13 @@ export const ContainerModal = styled.div`
 `;
 
 export const ContainerFormImagem = styled.div`
-  background-color: #e4e4e4;
+  background-color: #74db86;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
   border-radius: 25px;
-  padding: 30px 45px;
+  padding: 10px 45px;
   z-index: 4;
 
   .closedModal {
@@ -41,31 +41,23 @@ export const ContainerFormImagem = styled.div`
 
     top: 10%;
     left: 45%;
-    padding: 10px 20px;
+    padding: 5px 10px;
     margin: 0px;
 
     &:hover {
-      filter: brightness(0.8);
+      filter: brightness(0.9);
       transition: 0.3s;
     }
   }
 
   h3 {
-    color: #16afd0;
+    color: white;
+    font-size: 32px;
   }
 
   h4 {
     text-align: left;
-  }
-
-  button {
-    margin: 20px 0px;
-    padding: 20px 150px;
-    background-color: #00d930;
-    color: white;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 25px;
+    font-size: 26px;
   }
 
   .sub-container {
@@ -77,15 +69,26 @@ export const ContainerFormImagem = styled.div`
 
 export const ContainerImagem = styled.div`
   position: relative;
-  left: 5%;
+  left: 5vw;
 
   figure {
-    width: 355px;
-    height: 300px;
+    width: 35vw;
 
     img {
-      width: 100%;
-      height: 100%;
+      width: 35vw;
+    }
+  }
+`;
+
+export const ContainerDiscord = styled.div`
+  position: relative;
+  right: 35vw;
+
+  figure {
+    width: 5vw;
+
+    img {
+      width: 22vw;
     }
   }
 `;
