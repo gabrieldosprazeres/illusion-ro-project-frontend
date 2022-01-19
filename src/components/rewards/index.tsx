@@ -1,5 +1,5 @@
 import { Container } from "./styles";
-import Image from "../../Assets/FrontEnd IllusionRO/SEPARADOS/ReiPoring.svg";
+import Image from "../../Assets/FrontEnd IllusionRO/SEPARADOS/7.png";
 import { ProgressBar } from "../progressBar";
 import { Chest } from "../chest";
 import { useState, useEffect } from "react";

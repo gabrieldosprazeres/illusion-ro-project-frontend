@@ -87,7 +87,7 @@ export const Container = styled.div`
       background-image: url(${BackgroundImage});
       background-size: cover;
       background-repeat: no-repeat;
-      margin-top: -12vh;
+      margin-top: -25vh;
     }
   }
 
