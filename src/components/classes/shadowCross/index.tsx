@@ -17,8 +17,8 @@ export const ShadowCross = () => {
       <ContainerLeft>
         <ContainerTitle>
           <ContainerFlex>
-            <h2>Shadow Cross</h2>
-            <h3>Retalhador</h3>
+            <h2>Retalhador</h2>
+            <h3>Shadow Cross</h3>
             <p>
               Shadow Crosses podem empunhar duas vezes (equipar uma arma em cada
               mão) e utilizar dos mais variados venenos para aumentar sua força.

@@ -1,5 +1,5 @@
 import { Container } from "./styles";
-import Image from "../../Assets/FrontEnd IllusionRO/SEPARADOS/ReiPoring.png";
+import Image from "../../Assets/FrontEnd IllusionRO/CABECARIO.png";
 import { ProgressBar } from "../progressBar";
 import { Chest } from "../chest";
 import { useState, useEffect } from "react";
@@ -41,7 +41,7 @@ export const Rewards = () => {
         <h3>Progresso dos prêmios da Comunidade</h3>
 
         <div className="progress_bar_container">
-          <ProgressBar currentValue={Users} maxValue={800} />
+          <ProgressBar currentValue={Users} maxValue={1000} />
         </div>
 
         <div className="chests">

@@ -17,8 +17,8 @@ export const Meister = () => {
       <ContainerLeft>
         <ContainerTitle>
           <ContainerFlex>
-            <h2>Meister</h2>
-            <h3>Engenheiro(a)</h3>
+            <h2>Engenheiro(a)</h2>
+            <h3>Meister</h3>
             <p>
               Ao contrário do mecânico, Engenheiros podem lidar com robôs de
               combate automatizados em troca de engenharia mecânica.
@@ -34,9 +34,9 @@ export const Meister = () => {
         </MiddleContainer>
         <ContainerRight>
           <ContainerFlex>
-          <figure className="container-status-person">
+            <figure className="container-status-person">
               <img className="person" alt="person" src={logoPerson} />
-          </figure>
+            </figure>
           </ContainerFlex>
         </ContainerRight>
       </ContainerWrapeFlex>

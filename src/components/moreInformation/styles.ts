@@ -26,6 +26,11 @@ export const MoreInformationContainer = styled.div`
     }
   }
 
+  .kafra {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
   @media (min-width: 1440px) {
     max-width: 60vw;
 

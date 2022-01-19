@@ -17,8 +17,8 @@ export const Abyss = () => {
       <ContainerLeft>
         <ContainerTitle>
           <ContainerFlex>
-            <h2>Abyss Chaser</h2>
-            <h3>Desertor</h3>
+            <h2>Desertor</h2>
+            <h3>Abyss Chaser</h3>
             <p>
               Os Desertores, são a principal raça do mundo de Midgard. Eles são
               resilientes, tendo sobrevivido a um cataclismo de Ragnarök.

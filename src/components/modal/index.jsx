@@ -147,7 +147,7 @@ export const Modal = ({ setOpenModal }) => {
               <span>{errors.phone?.message}</span>
             </ContainerLabel>
             <ContainerLabel>
-              <label>*Username</label>
+              <label>*Nick</label>
               <div className="input">
                 <figure>
                   <img alt="icon" src={iconProfile} />

@@ -17,8 +17,8 @@ export const ElementalGuard = () => {
       <ContainerLeft>
         <ContainerTitle>
           <ContainerFlex>
-            <h2>Elemental Master</h2>
-            <h3>Elementalista</h3>
+            <h2>Elementalista</h2>
+            <h3>Elemental Master</h3>
             <p>
               O Elementalista consegue manipular todos os elementos dentro do
               mundo de ragnarok transformando em diversas magias poderosas.

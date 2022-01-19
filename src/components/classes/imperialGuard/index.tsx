@@ -17,8 +17,8 @@ export const ImperialGuard = () => {
       <ContainerLeft>
         <ContainerTitle>
           <ContainerFlex>
-            <h2>Imperial Guard</h2>
-            <h3>Guardião Imperial</h3>
+            <h2>Guardião Imperial</h2>
+            <h3>Imperial Guard</h3>
             <p>
               Uma guarda imperial ou guarda do palácio é um grupo especial de
               tropas (ou um membro dele) de um império, normalmente associado
