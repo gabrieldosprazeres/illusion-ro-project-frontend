@@ -12,7 +12,7 @@ export const MoreInformation = () => {
           e tenha informações sobre <br />o nosso servidor de{" "}
           <strong>Ragnarok Online</strong>!
         </p>
-        <strong>Recepcionista Kafra</strong>
+        <p className="kafra">Recepcionista Kafra</p>
       </div>
     </MoreInformationContainer>
   );

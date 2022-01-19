@@ -17,8 +17,8 @@ export const DragonKinght = () => {
       <ContainerLeft>
         <ContainerTitle>
           <ContainerFlex>
-            <h2>Dragon Knight</h2>
-            <h3>Cavaleiro Dracônico</h3>
+            <h2>Cavaleiro Dracônico</h2>
+            <h3>Dragon Knight</h3>
             <p>
               Os Cavaleiros Dracônicos são um antigo grupo dos guerreiros mais
               habilidosos de Midgard.

@@ -57,7 +57,7 @@ export const Background = styled.div`
     color: white;
     position: relative;
     left: 66%;
-    bottom: 7%;
+    bottom: 4%;
     z-index: 2;
   }
   h2 {

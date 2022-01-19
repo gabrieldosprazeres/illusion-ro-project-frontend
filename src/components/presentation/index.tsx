@@ -12,9 +12,9 @@ export const Presentation = () => {
         </div>
         <div className="bubble translateInformation">
           <h3>
-            18.1 Completo <br /> E traduzido
+            Episódio 18.1 <br /> Completo e Traduzido
           </h3>
-          <span>em pt-br</span>
+          <span>Em PT-BR</span>
         </div>
         <h2>
           ESTÁ CHEGANDO O SERVIDOR <br /> MAIS ATUALIZADO DO BRASIL

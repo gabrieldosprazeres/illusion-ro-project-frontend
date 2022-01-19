@@ -14,10 +14,12 @@ a{
     text-decoration: none;
     cursor: pointer;
 }
+
 button{
     cursor: pointer;
     border: none;
 }
+
 ul, li{
     list-style: none;
 }

@@ -17,8 +17,8 @@ export const Biolo = () => {
       <ContainerLeft>
         <ContainerTitle>
           <ContainerFlex>
-            <h2>Biolo</h2>
-            <h3>Geneticista</h3>
+            <h2>Geneticista</h2>
+            <h3>Biolo</h3>
             <p>
               O Geneticista é especialista em biotecnologia, agregando a
               bioenergia das plantas para usar em suas batalhas.

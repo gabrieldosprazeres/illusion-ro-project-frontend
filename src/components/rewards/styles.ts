@@ -87,12 +87,14 @@ export const Container = styled.div`
       background-image: url(${BackgroundImage});
       background-size: cover;
       background-repeat: no-repeat;
+      margin-top: -12vh;
     }
   }
 
   @media (min-width: 1440px) {
     .image {
       img {
+        margin-top: 5vh;
         width: 65%;
       }
     }
