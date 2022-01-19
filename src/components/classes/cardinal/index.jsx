@@ -17,8 +17,8 @@ export const Cardinal = () => {
       <ContainerLeft>
         <ContainerTitle>
           <ContainerFlex>
-            <h2>Cardinal</h2>
-            <h3>Cardeal</h3>
+            <h2>Cardeal</h2>
+            <h3>Cardinal</h3>
             <p>
               Um cardeal é um bispo proeminente e príncipe do Colégio dos
               Cardeais da Igreja Católica.
@@ -35,7 +35,7 @@ export const Cardinal = () => {
         <ContainerRight>
           <ContainerFlex>
             <figure className="container-status-person">
-                <img className="person" alt="person" src={logoPerson} />
+              <img className="person" alt="person" src={logoPerson} />
             </figure>
           </ContainerFlex>
         </ContainerRight>

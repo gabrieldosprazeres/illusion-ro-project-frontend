@@ -10,7 +10,7 @@ interface ProgressBarProps {
 
 export const ProgressBar = ({
   currentValue = 0,
-  maxValue = 500,
+  maxValue = 1000,
   initialValue = 0,
   heigth = 25,
   fontColor = "#525050",

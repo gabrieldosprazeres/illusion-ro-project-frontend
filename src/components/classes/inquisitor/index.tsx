@@ -17,8 +17,8 @@ export const Inquisitor = () => {
       <ContainerLeft>
         <ContainerTitle>
           <ContainerFlex>
-            <h2>Inquisitor</h2>
-            <h3>Inquisidor</h3>
+            <h2>Inquisidor</h2>
+            <h3>Inquisitor</h3>
             <p>
               O Inquisidor é um membro da denominação como um agente agindo em
               nome do julgamento divino.

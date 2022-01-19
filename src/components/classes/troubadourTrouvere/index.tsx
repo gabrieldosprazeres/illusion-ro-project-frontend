@@ -17,8 +17,8 @@ export const TroubadourTrouvere = () => {
       <ContainerLeft>
         <ContainerTitle>
           <ContainerFlex>
-            <h2>Trouvere | Troubadour</h2>
-            <h3>Diva | Segrel</h3>
+            <h2>Diva | Segrel</h2>
+            <h3>Trouvere | Troubadour</h3>
             <p>
               Poetas-compositores que foram aproximadamente contemporâneos e
               influenciados pelos trovadores, mas que compuseram suas obras nos

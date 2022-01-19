@@ -7,10 +7,12 @@ export const Container = styled.div`
 
   margin: 0 auto;
 
+  max-width: 1440px;
+
   @media (min-width: 1024px) {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 `;
 
@@ -72,7 +74,6 @@ export const ContainerFlex = styled.div`
 
     .person {
       width: 350px;
-      height: 350px;
     }
   }
 `;

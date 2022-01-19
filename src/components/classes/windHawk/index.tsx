@@ -17,8 +17,8 @@ export const WindHawk = () => {
       <ContainerLeft>
         <ContainerTitle>
           <ContainerFlex>
-            <h2>Windhawk</h2>
-            <h3>Patrulheiro</h3>
+            <h2>Patrulheiro</h2>
+            <h3>Windhawk</h3>
             <p>
               Utilizando de Arcos e Bestas, com suas flechas de diversos
               elementos, o Patrulheiro está sempre com seus companheiros de

@@ -23,11 +23,11 @@ export const Chest = ({ currentValue = 0, index }: chestProps) => {
   };
 
   const values: Value = {
-    1: 160,
-    2: 320,
-    3: 480,
-    4: 640,
-    5: 800,
+    1: 200,
+    2: 400,
+    3: 600,
+    4: 800,
+    5: 1000,
   };
 
   type RewardsProp = {

@@ -17,8 +17,8 @@ export const ArchMage = () => {
       <ContainerLeft>
         <ContainerTitle>
           <ContainerFlex>
-            <h2>Arch Mage</h2>
-            <h3>Mestre Arcano</h3>
+            <h2>Mestre Arcano</h2>
+            <h3>Arch Mage</h3>
             <p>
               Mestre Arcanos contam com suas habilidades como sua principal
               fonte de dano, e tais ataques são baseados em magia e levam em
