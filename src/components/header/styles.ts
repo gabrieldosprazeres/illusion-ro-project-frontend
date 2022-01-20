@@ -10,5 +10,6 @@ export const ContainerLogo = styled.figure`
   img {
     max-width: 20vw;
     margin-top: 30px;
+    margin-bottom: -50px;
   }
 `;

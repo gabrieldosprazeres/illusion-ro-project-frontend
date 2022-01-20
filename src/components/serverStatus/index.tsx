@@ -14,7 +14,7 @@ export const ServerStatus = () => {
           <h1>
             Informações do <strong>Servidor</strong>
           </h1>
-          <li>Episodio 18.1 Lobo Cinzento</li>
+          <li>Episodio 18.1 - Sentido das Orações</li>
           <li>Rates 25x25x10x</li>
           <li>
             Quartas Classes <sup>PT-BR</sup>

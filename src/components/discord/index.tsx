@@ -27,7 +27,7 @@ export const Discord = ({ setOpenDiscord }: any) => {
               <a
                 rel="noreferrer"
                 target="_blank"
-                href="https://discord.gg/C2RN67YGRp"
+                href="https://discord.gg/6NnRVhwVqA"
               >
                 <img alt="discord" src={discord} />
               </a>
