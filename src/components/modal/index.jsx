@@ -75,6 +75,8 @@ export const Modal = ({ setOpenModal }) => {
           progress: undefined,
         });
 
+        setOpenDiscord(true);
+
         reset();
       })
       .catch((e) => {
@@ -159,9 +161,7 @@ export const Modal = ({ setOpenModal }) => {
               </div>
               <span>{errors.username?.message}</span>
             </ContainerLabel>
-            <button onClick={() => setOpenDiscord(true)} type="submit">
-              Receber Prêmios!
-            </button>
+            <button type="submit">Receber Prêmios!</button>
             {openDiscord && <Discord setOpenDiscord={setOpenDiscord} />}
           </form>
           <ContainerImagem>
