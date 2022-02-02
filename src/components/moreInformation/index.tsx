@@ -6,7 +6,7 @@ export const MoreInformation = () => {
       <div className="contentContainer">
         <h3>Olá Aventureiro!!</h3>
         <p>
-          <a rel="noreferrer" target="_blank" href="https://www.topragnarok.com.br/vote/18326">
+          <a rel="noreferrer" target="_blank" href="https://illusionro.com/voto.php">
             <strong>Vote</strong>&nbsp;
           </a>
           e ajude o nosso
