@@ -20,6 +20,12 @@ export const MoreInformationContainer = styled.div`
     font-size: 2vw;
     color: #484848;
 
+    p {
+      font-size: 1.6vw;
+      max-width: 30vw;
+      margin-top: 1vw;
+    }
+
     p a {
       color: black;
       text-decoration: none;
